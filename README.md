@@ -1,2 +1,2 @@
-# ResetIncremental
-An Incremental about Resetting
+# Stypers
+HEAVILY INSPIRED BY Z-TYPE!
