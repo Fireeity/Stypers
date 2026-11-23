@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://5em4u6ciadrg"]
+
+[ext_resource type="Texture2D" uid="uid://c1ov20es4o2m5" path="res://Graphics/blanksquare.jpg" id="1_ujsdp"]
+
+[node name="BackgroundNode" type="Node2D" unique_id=128471157]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2067812371]
+modulate = Color(0.20784314, 0.1764706, 0.25490198, 1)
+position = Vector2(567, 327)
+scale = Vector2(6.42, 4.02)
+texture = ExtResource("1_ujsdp")
