@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dao3q0ry2dphv"]
+
+[ext_resource type="PackedScene" uid="uid://5em4u6ciadrg" path="res://background_node.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://c2rw7xbs6ur8e" path="res://ship.tscn" id="2_vonw3"]
+[ext_resource type="PackedScene" uid="uid://hjek3gp4ygnf" path="res://camera.tscn" id="3_oi3di"]
+
+[node name="Level" type="Node2D" unique_id=1472817160]
+
+[node name="BackgroundNode" parent="." unique_id=128471157 instance=ExtResource("1_u52ul")]
+
+[node name="Ship" parent="." unique_id=986495803 instance=ExtResource("2_vonw3")]
+
+[node name="Camera" parent="." unique_id=459139084 instance=ExtResource("3_oi3di")]

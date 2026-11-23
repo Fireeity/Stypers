@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://hjek3gp4ygnf"]
+
+[node name="Camera" type="Node2D" unique_id=459139084]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2054549409]
+rotation = 1.5707964
+ignore_rotation = false
