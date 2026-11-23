@@ -1,13 +1,20 @@
 [gd_scene format=3 uid="uid://dao3q0ry2dphv"]
 
+[ext_resource type="Script" uid="uid://c3ikxhj2fmou4" path="res://level.gd" id="1_0b4ue"]
 [ext_resource type="PackedScene" uid="uid://5em4u6ciadrg" path="res://background_node.tscn" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://c2rw7xbs6ur8e" path="res://ship.tscn" id="2_vonw3"]
 [ext_resource type="PackedScene" uid="uid://hjek3gp4ygnf" path="res://camera.tscn" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://bk0nh5n33ar2x" path="res://Enemies/enemy_spawner.tscn" id="5_1ainy"]
 
 [node name="Level" type="Node2D" unique_id=1472817160]
+script = ExtResource("1_0b4ue")
 
 [node name="BackgroundNode" parent="." unique_id=128471157 instance=ExtResource("1_u52ul")]
 
 [node name="Ship" parent="." unique_id=986495803 instance=ExtResource("2_vonw3")]
+position = Vector2(0, 550)
 
 [node name="Camera" parent="." unique_id=459139084 instance=ExtResource("3_oi3di")]
+
+[node name="EnemySpawner" parent="." unique_id=528717635 instance=ExtResource("5_1ainy")]
+position = Vector2(0, -550)

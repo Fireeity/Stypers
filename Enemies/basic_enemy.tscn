@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cfwr62lfaf45f"]
+
+[ext_resource type="Texture2D" uid="uid://ovlww66doff2" path="res://icon.svg" id="1_221se"]
+[ext_resource type="Script" uid="uid://ctuke38ebl20y" path="res://Enemies/basic_enemy.gd" id="1_dvx36"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+
+[node name="BasicEnemy" type="Node2D" unique_id=1001602587]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=461698414]
+script = ExtResource("1_dvx36")
+speed = 25.0
+
+[node name="BasicEnemyIMG" type="Sprite2D" parent="CharacterBody2D" unique_id=1215332248]
+modulate = Color(1, 0.015686275, 0.5137255, 1)
+texture = ExtResource("1_221se")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1277418393]
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_wvhbo")

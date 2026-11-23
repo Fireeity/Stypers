@@ -2,7 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://ovlww66doff2" path="res://icon.svg" id="1_l3rv8"]
 
-[node name="Ship" type="Node2D" unique_id=986495803]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
 
-[node name="ShipIMG" type="Sprite2D" parent="." unique_id=459236029]
+[node name="Ship" type="Node2D" unique_id=489081572]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=928958638 groups=["Player"]]
+
+[node name="ShipIMG" type="Sprite2D" parent="CharacterBody2D" unique_id=459236029]
 texture = ExtResource("1_l3rv8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1597642040]
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_wvhbo")

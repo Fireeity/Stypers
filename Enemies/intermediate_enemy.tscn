@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cs0311h1eosqr"]
+
+[ext_resource type="Texture2D" uid="uid://ovlww66doff2" path="res://icon.svg" id="1_jfq41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+
+[node name="BasicEnemy" type="Node2D" unique_id=1001602587]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1796898175]
+
+[node name="BasicEnemyIMG" type="Sprite2D" parent="CharacterBody2D" unique_id=1215332248]
+modulate = Color(0.62455505, 0.6241332, 1.1551381e-06, 1)
+texture = ExtResource("1_jfq41")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1009876671 groups=["Player"]]
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_wvhbo")
